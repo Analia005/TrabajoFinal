@@ -31,6 +31,7 @@
     background-color: #d1d1d1;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tRVAr6oXykj544buP8WNkepqc2hzid6X_A&usqp=CAU);
     background-size: cover;
+    border: 1px solid black;
   }
 
   table.tabla {

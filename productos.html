@@ -35,17 +35,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class=""  v-for="Producto in productos" :key="productos.id">
-                                    <td scope="row">{{productos.id}}</td>                                    
-                                    <td>{{Producto.nombre_prod}}</td>
-                                    <td>{{Producto.precio}}</td>
+                                <tr class=""  v-for="producto in productos" :key="producto.id">
+                                    <td scope="row">{{producto.id}}</td>                                    
+                                    <td>{{producto.nombre_prod}}</td>
+                                    <td>{{producto.precio}}</td>
                                     <td>
-                                        <img width="60"  :src="Producto.imagen" :alt="Producto.nombre_prod">
+                                        <img width="60"  :src="producto.imagen" :alt="producto.nombre_prod">
                                     </td>
-                                    <td>{{Producto.usuario}}</td>
+                                    <td>{{producto.usuario}}</td>
                                     <td>
-                    			<a class="boton1" :href="'Pedido_modificaciones.html?id='+ productos.id" >Editar</a>
-                                      <button type="button" class="boton2" v-on:click="eliminar(productos.id)" >Eliminar</button>
+                    			<a class="boton1" :href="'Pedido_modificaciones.html?id='+ producto.id" >Editar</a>
+                                      <button type="button" class="boton2" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                     </td>
                                 </tr>
                             </tbody>
