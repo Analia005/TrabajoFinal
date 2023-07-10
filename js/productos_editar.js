@@ -19,10 +19,10 @@ const { createApp } = Vue
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
-                    this.id=data.id
-                    this.nombre_prod = data.nombre_prod;
-                    this.precio=data.precio
-                    this.imagen=data.imagen
+                    this.id=data.id,
+                    this.nombre_prod=data.nombre_prod,
+                    this.precio=data.precio,
+                    this.imagen=data.imagen,
                     this.usuario=data.usuario                  
                 })
                 .catch(err => {
@@ -31,14 +31,14 @@ const { createApp } = Vue
                 })
         },
         modificar() {
-            let productos = {
-                nombre_prod:this.nombre_prod,
+            let producto = {
+                nombre_prod: this.nombre_prod,
                 precio: this.precio,
                 imagen: this.imagen,
-                usuario:this.usuario
+                usuario: this.usuario
             }
             var options = {
-                body: JSON.stringify(productos),
+                body: JSON.stringify(producto),
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
