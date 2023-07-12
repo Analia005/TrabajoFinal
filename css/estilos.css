@@ -99,3 +99,14 @@
 form label{
   font-size:x-large;
 }
+.footer {
+  background-color: #8f62a0;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
